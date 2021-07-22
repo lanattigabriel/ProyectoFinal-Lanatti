@@ -286,7 +286,7 @@ form {
         font-size: 30px; }
   .nav-index__ul__li:hover {
     background-color: #262626;
-    background-image: url(../Imagenes/bajo-byn.jpg);
+    background-image: url(../imagenes/bajo-byn.jpg);
     background-repeat: no-repeat;
     background-position: center;
     transform: scale(1.03); } }
