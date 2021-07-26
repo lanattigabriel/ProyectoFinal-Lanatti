@@ -338,32 +338,60 @@ transform: scale(1.3);
 ------ SECCION CONTACTO ------
 */
 
-form{
-    text-align: center;
-}
-
-.formInfo{
+.formInfo {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
     display: flex;
-    align-content: space-between;
-
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+        .formInfo__formBoxes{
+            display: flex;
+            flex-direction: column;
+            .formInfo__formBoxes__box{
+                position: relative;
+                color: #8f8989;  
+                text-align: center;
+                margin: 3px;
+                }
+        }
+        .formInfo__formText{
+            position: relative;
+            color: #d4cece;
+            font-weight: lighter;  
+            text-align: center;
+            // max-width: 80%;
+        }
 }
 
-.formText{
-    width: 60%;
-    font-weight: lighter;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 10px;
+.formInfo::before {    
+      content: "";
+      background-image: url('../imagenes/bajo-byn.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.12;
 }
 
-.formBoxes{
-    display: flex;
-    flex-direction: column;
+@media only screen and (min-width: 1200px){
+    .formInfo{
+        .formInfo__formBoxes{
+            min-width: 300px;
+                .formInfo__formBoxes__box{
+                    margin: 10px;
+                }
+        }
+        .formInfo__formText{
+            font-size: 20px;
+            line-height: 50px;
+            max-width: 60%;
+        }
+    }
 }
-.formTitle{
-    justify-self: center;
-}
-
 
 /* MEDIA QUERIES INDEX */
 

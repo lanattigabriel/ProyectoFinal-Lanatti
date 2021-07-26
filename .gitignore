@@ -1,6 +1,3 @@
 # ignore node
 node_modules
 
-# ignore .json
-package-lock.json
-package.json

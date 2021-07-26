@@ -262,26 +262,48 @@ hr {
 /* 
 ------ SECCION CONTACTO ------
 */
-form {
-  text-align: center; }
-
 .formInfo {
+  position: relative;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  align-content: space-between; }
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around; }
+  .formInfo .formInfo__formBoxes {
+    display: flex;
+    flex-direction: column; }
+    .formInfo .formInfo__formBoxes .formInfo__formBoxes__box {
+      position: relative;
+      color: #8f8989;
+      text-align: center;
+      margin: 3px; }
+  .formInfo .formInfo__formText {
+    position: relative;
+    color: #d4cece;
+    font-weight: lighter;
+    text-align: center; }
 
-.formText {
-  width: 60%;
-  font-weight: lighter;
-  font-size: 18px;
-  line-height: 30px;
-  margin: 10px; }
+.formInfo::before {
+  content: "";
+  background-image: url("../imagenes/bajo-byn.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.12; }
 
-.formBoxes {
-  display: flex;
-  flex-direction: column; }
-
-.formTitle {
-  justify-self: center; }
+@media only screen and (min-width: 1200px) {
+  .formInfo .formInfo__formBoxes {
+    min-width: 300px; }
+    .formInfo .formInfo__formBoxes .formInfo__formBoxes__box {
+      margin: 10px; }
+  .formInfo .formInfo__formText {
+    font-size: 20px;
+    line-height: 50px;
+    max-width: 60%; } }
 
 /* MEDIA QUERIES INDEX */
 @media only screen and (min-width: 768px) {

@@ -52,32 +52,34 @@
             </header>
 
             <section>
-                <h2 class="formTitle">CONTACTO</h2>    
+                <h2 class="tituloSecciones">CONTACTO</h2>    
             </section>
             
             <!-- Principal -->
             <main class="formInfo">
-                <p class="formText">Gabriel Lanatti es un bajista argentino. Empezó a tocar el bajo a los 12 años y desde entonces ha participado en diversos proyectos tanto de sesionista como de miembro estable y líder de su proyecto solista.</p>
                 <section>
-                    <form class="formBoxes" action="">
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" name="nombre">
-                        <label for="pais">País:</label>
-                        <select name="pais" id="pais">
+                    <form class="formInfo__formBoxes" action="">
+                        <label class="formInfo__formBoxes__box" for="nombre">Nombre: </label>
+                        <input class="formInfo__formBoxes__box" type="text" name="nombre">
+                        <label class="formInfo__formBoxes__box" for="pais">País:</label>
+                        <select class="formInfo__formBoxes__box" name="pais" id="pais">
                             <option value="argentina">Argentina</option>
                             <option value="mexico">Mexico</option>
                             <option value="colombia">Colombia</option>
                             <option value="uruguay">Uruguay</option>
                             <option value="otro">Otro</option>
                         </select>
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea name="comentarios"  cols="30" rows="10"></textarea>
-                        <div class="acepta-newsletter">
+                        <label class="formInfo__formBoxes__box" for="comentarios">Comentarios:</label>
+                        <textarea class="formInfo__formBoxes__box" name="comentarios"  cols="30" rows="10"></textarea>
+                        <div class="formInfo__formBoxes__box" class="acepta-newsletter">
                             <input type="checkbox" name="acepta-newsetter"> Recibir Newsletter
                         </div>
-                        <input type="reset" name="reset" value="Limpiar formulario">
-                        <input type="submit" name="enviar" value="Enviar">
+                        <input class="formInfo__formBoxes__box" type="reset" name="reset" value="Limpiar formulario">
+                        <input class="formInfo__formBoxes__box" type="submit" name="enviar" value="Enviar">
                     </form>
+                </section>
+                <section class="formInfo__formText">
+                    <p class="formInfo__formText__p">Gabriel Lanatti es un bajista argentino. Empezó a tocar el bajo a los 12 años y desde entonces ha participado en diversos contextos musicales tanto de sesionista como de miembro estable y líder de su grupo solista. Entre sus proyectos principales se encuentra el trío de rock Jamani, su disco solista en quinteto de improvisación y los conciertos Gatoalien.</p>
                 </section>
             </main>
                     
