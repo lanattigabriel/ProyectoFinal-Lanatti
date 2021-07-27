@@ -12,6 +12,11 @@
     ------- INDEX------
 */
 
+.indexBody{
+    display: flex;
+    flex-direction: column;
+}
+
 .indexTitle{
     font-size: 10px;
     font-weight: lighter;
@@ -172,6 +177,10 @@ transform: scale(1.3);
     ------- SECCION MANTRAS------
 */
 
+#mantrasEnBlancoyNegro{
+    justify-content: center;
+}
+
 .descripcion-mantras{
     .descripcion-mantras__texto{
         margin-bottom: 10px;
@@ -301,9 +310,10 @@ transform: scale(1.3);
 */
 
 #otrasColaboraciones iframe{
-    width: 249px;
+    // width: 249px;
     height: 153px;
     margin: 5px auto;
+    width: 100%;
 }
 
 #otrasColaboraciones .multimedia{
@@ -360,8 +370,7 @@ transform: scale(1.3);
             position: relative;
             color: #d4cece;
             font-weight: lighter;  
-            text-align: center;
-            // max-width: 80%;
+            text-align: justify;
         }
 }
 
@@ -369,28 +378,13 @@ transform: scale(1.3);
       content: "";
       background-image: url('../imagenes/bajo-byn.jpg');
       background-size: cover;
+      background-position: center;
       position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
       left: 0px;
-      opacity: 0.12;
-}
-
-@media only screen and (min-width: 1200px){
-    .formInfo{
-        .formInfo__formBoxes{
-            min-width: 300px;
-                .formInfo__formBoxes__box{
-                    margin: 10px;
-                }
-        }
-        .formInfo__formText{
-            font-size: 20px;
-            line-height: 50px;
-            max-width: 60%;
-        }
-    }
+      opacity: 0.15;
 }
 
 /* MEDIA QUERIES INDEX */
@@ -730,5 +724,30 @@ transform: scale(1.3);
             "porto juanga"
             "catu juanga";
         grid-template-columns: 1fr 2fr;
+    }
+}
+
+/* MEDIA QUERIES SECCION CONTACTO */
+
+@media only screen and (min-width: 768px){
+    .formInfo__formText{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .formInfo{
+        .formInfo__formBoxes{
+            min-width: 300px;
+                .formInfo__formBoxes__box{
+                    margin: 10px;
+                }
+        }
+        .formInfo__formText{
+            font-size: 20px;
+            line-height: 50px;
+            max-width: 60%;
+        }
     }
 }
