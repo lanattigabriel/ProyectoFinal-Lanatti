@@ -290,7 +290,9 @@ hr {
     position: relative;
     color: #d4cece;
     font-weight: lighter;
-    text-align: justify; }
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 15px; }
 
 .formInfo::before {
   content: "";
